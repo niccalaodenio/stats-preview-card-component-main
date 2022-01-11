@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+//primary color
+$verydarkblue: hsl(233, 47%, 7%);
+$darkdesaturatedblue : hsl(244, 38%, 16%);
+$softviolet: hsl(277, 64%, 61%);
+//neutral
+$white: hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-head:hsla(0, 0%, 100%, 0.6);
+
+
+@mixin reseter {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin default-size{
+    width: 1440px;
+    height: 800px;
+}
+@mixin font($fam, $weight){
+    font:{
+        size: 15px;
+        weight: $weight;
+        family: $fam;
+    }
+}
+@mixin  flex-center {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    // align-items: center;
+
+}
+
+*{
+    @include reseter();
+}
+body{
+    @include default-size();
+    // @include font(Inter, 700);
+    background-color: $verydarkblue;
+    @include flex-center();
+}
+.container{
+    @include flex-center();
+    flex-direction: row-reverse;
+      position: relative;
+}
+.{
+
+}
+.backdrop{
+    background: $softviolet ;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 540px;
+    height: 460px;
+    opacity: .6;
+}
+
+.txt{
+    background: $darkdesaturatedblue;
+    width: 540px;
+    height: 460px;
+}
+header{
+
+    img{
+        z-index: -10;
+    }
+}
