@@ -34,24 +34,12 @@ body {
   position: relative;
 }
 
-.backdrop {
-  background: #aa5cdb;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 540px;
-  height: 460px;
-  opacity: .6;
-}
-
-.txt {
-  background: #1b1938;
-  width: 540px;
-  height: 460px;
-}
-
-header img {
-  z-index: -10;
+header {
+  min-height: 446px;
+  min-width: 540px;
+  background: url(images/image-header-desktop.jpg) no-repeat;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */
