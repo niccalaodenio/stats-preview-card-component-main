@@ -33,13 +33,73 @@ body {
           flex-direction: row-reverse;
   position: relative;
 }
+:root{
+  -verydarkblue: hsl(233, 47%, 7%);
+  -darkdesaturatedblue : hsl(244, 38%, 16%);
+  -softviolet: hsl(277, 64%, 61%);
 
-header {
+-white: hsl(0, 0%, 100%);
+-main-paragraph: hsla(0, 0%, 100%, 0.75);
+-stat-head:hsla(0, 0%, 100%, 0.6);
+}
+
+.backdrop{
+  background:  var(-softviolet) ;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 540px;
+  height: 460px;
+  opacity: .6;
+}
+
+.txt{
+  background: var(-darkdesaturatedblue);
+  width: 540px;
+  height: 460px;
+}
+
+/* .hdr{
+  position: relative;
+
+  z-index: 100;
+  width: 540px;
+  height: 460px; 
+  opacity: .6;
+
+  }
+
+.mix{
+  background-color: #aa5cdb;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.25;
+border-radius: 0 1rem 1rem 0;
+ 
+}
+img{
+    mix-blend-mode:multiply;
+} */
+ .mainpic {
   min-height: 446px;
   min-width: 540px;
-  background: url(images/image-header-desktop.jpg) no-repeat;
+  background: url(images/image-header-desktop.jpg) no-repeat center right / cover;
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
   opacity: 0.8;
 }
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: #a743d6;
+  mix-blend-mode: multiply;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
 /*# sourceMappingURL=style.css.map */
